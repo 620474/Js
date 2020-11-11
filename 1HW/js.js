@@ -1,0 +1,22 @@
+console.log("Первая задача");
+const sotok = 10;
+const a = 15;
+const b = 25;
+let s = sotok * 100;
+console.log(s - a * b);
+console.log("Вторая задача");
+let area = 15;
+let areaInCm = 15 * 100;
+let oval = 600;
+console.log(oval - areaInCm);
+console.log("Третья задача");
+let firstNumber = prompt("Введите первое число");
+let secondNumber = prompt("Введите второе число");
+let thirdNumber = prompt("Введите третье число");
+console.log(firstNumber < secondNumber ? firstNumber : secondNumber < thirdNumber ? secondNumber : thirdNumber);
+console.log("Четвертая задача");
+let m = prompt("Введите первое число");
+let n = prompt("Введите второе число");
+const near = 10;
+console.log(Math.abs(near - m) > Math.abs(near - n) ? n : m);
+
