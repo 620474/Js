@@ -1,27 +1,27 @@
 console.log("Первая задача");
-let month = prompt("Введите месяц").toLowerCase();
+let month = parseInt(prompt("Введите месяц").toLowerCase());
 switch (month) {
-    case "январь":
-    case "декабрь":
-    case "февраль":
+    case 1:
+    case 12:
+    case 2:
         alert("Зима");
         break;
 
-    case "март":
-    case "апрель":
-    case "май":
+    case 3:
+    case 4:
+    case 5:
         alert('Весна');
         break;
 
-    case "июнь":
-    case "июль":
-    case "август":
+    case 6:
+    case 7:
+    case 8:
         alert('Лето');
         break;
 
-    case "сентябрь":
-    case "октябрь":
-    case "ноябрь":
+    case 9:
+    case 10:
+    case 11:
         alert('Осень');
         break;
 
