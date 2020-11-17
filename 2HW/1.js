@@ -1,4 +1,4 @@
-console.log("Первая задача");
+/*console.log("Первая задача");
 let month = parseInt(prompt("Введите месяц").toLowerCase());
 switch (month) {
     case 1:
@@ -72,15 +72,14 @@ for (let i = 1; i <= 100; i++) {
     } else if (i % 3 == 0 && i % 5 == 0) {
         console.log("threefive");
     }
-}
+}*/
 
 console.log("шестая задача");
+let vesh = parseInt(prompt("Введите кол-во моющего средства"));
+let bottle = vesh - (vesh % 0.5);
+let numberOf = parseInt(prompt("Введите кол-во тарелок"));
 
-let bottle = prompt("Введите кол-во моющего средства");
-let numberOf = prompt("Введите кол-во тарелок");
-
-
-for (; numberOf >= 0 || bottle >= 0; numberOf--) {
+for (; numberOf >= 0 && bottle >= 0; numberOf--) {
     if (numberOf === 0 && bottle === 0) {
         console.log(`Все вымыто, осталось чистящего средства ${bottle}, тарелок ${numberOf}`);
         break;
@@ -93,6 +92,7 @@ for (; numberOf >= 0 || bottle >= 0; numberOf--) {
     }
     bottle -= 0.5;
 }
+
 
 
 
