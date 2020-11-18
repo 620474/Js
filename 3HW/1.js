@@ -54,10 +54,13 @@ while (true) {
     if (weights.length === 1) {
         console.log(weights[0]);
         break;
+    } else if (weights.length === 0) {
+        console.log(`${weights.length}`);
+        break;
     }
+
     let a = Math.max.apply(null, weights);
     weights.splice(weights.indexOf(a), 1);
-    console.log(a);
     let b = Math.max.apply(null, weights);
     weights.splice(weights.indexOf(b), 1);
     if (a !== b) {
