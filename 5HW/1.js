@@ -13,7 +13,7 @@ console.log("2 задача");
 
 function range(start, finish, step = 1) {
     let arrayRange = [];
-    for (let i = start; i < finish; i += step) {
+    for (let i = start; i <= finish; i += step) {
         arrayRange.push(i);
     }
     return arrayRange;
@@ -46,20 +46,17 @@ console.log(profile(student));
 console.log("4 задача");
 
 let alphabet1 = "аеёиоуэюя";
-let alphabet2 = "бвгджзйклмнпрстфхцчшщъь";
+let alphabet2 = "бвгджзйклмнпрстфхцчшщ";
 
 function rnd(alphabet) {
     return alphabet.charAt(Math.floor(Math.random() * alphabet.length));
 }
 
 let text = "";
-let t = Math.floor(Math.random() * (2 - 1) + 1);
-if (t === 1) {
-    text += rnd(alphabet1);
-} else {
-    text += rnd(alphabet2);
-}
-for (let i = 2; i <= Math.floor(Math.random() * (6 - 3) + 3); i++) {
+let t = Math.floor(Math.random() * (3 - 1) + 1);
+let random = Math.floor(Math.random() * (6 - 3) + 3);
+
+for (let i = 1; i <= random; i++) {
     if (t === 1) {
         if (i % 2 === 0) {
             text += rnd(alphabet2);
