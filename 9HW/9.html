@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        let assert = chai.assert;
+    </script>
+
+</head>
+<body>
+<div id="graph" style="height: 300px; width: 300px"></div>
+
+
+
+<script src="2.js">
+
+</script>
+<script type="module" src="1.js">
+
+</script>
+<script src="tests.js"></script>
+
+<div id="mocha"></div>
+<script>
+    mocha.run();
+</script>
+<script src="3.js">
+
+</script>
+
+</body>
+
+</html>

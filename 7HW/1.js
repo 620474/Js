@@ -56,14 +56,3 @@ function renderGood(good) {
         goodss.appendChild(div);
     })
 }
-
-
-
-
-
-
-
-
-
-
-
